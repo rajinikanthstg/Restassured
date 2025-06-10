@@ -129,6 +129,6 @@ public class ReqresCrud {
         System.out.println(response.statusCode()+" "+response.statusLine());
         System.out.println(response.getTime());
 
-        Assert.assertEquals(response.statusCode(),200);
+        Assert.assertEquals(response.statusCode(),204);
     }
 }
