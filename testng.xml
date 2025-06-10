@@ -3,11 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Test">
         <classes>
-            <class name="">
-                <methods>
-                    <include name="TestTwo"/>
-                </methods>
-            </class>
+            <class name="reqres.ReqresCrud"/>
         </classes>
     </test>
 </suite>

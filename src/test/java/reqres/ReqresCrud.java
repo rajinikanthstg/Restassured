@@ -4,6 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.json.simple.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ReqresCrud {
@@ -19,6 +20,8 @@ public class ReqresCrud {
         System.out.println(response.asPrettyString());
         System.out.println(response.statusCode()+" "+response.statusLine());
         System.out.println(response.getTime());
+
+        Assert.assertEquals(response.statusCode(),200);
     }
 
     @Test(priority = 2)
@@ -34,6 +37,8 @@ public class ReqresCrud {
         System.out.println(response.asPrettyString());
         System.out.println(response.statusCode()+" "+response.statusLine());
         System.out.println(response.getTime());
+
+        Assert.assertEquals(response.statusCode(),200);
     }
 
     @Test(priority = 3)
@@ -56,6 +61,8 @@ public class ReqresCrud {
         System.out.println(response.body().asPrettyString());
         System.out.println(response.statusCode()+" "+response.statusLine());
         System.out.println(response.getTime());
+
+        Assert.assertEquals(response.statusCode(),201);
     }
 
     @Test(priority = 4)
@@ -78,6 +85,8 @@ public class ReqresCrud {
         System.out.println(response.body().asPrettyString());
         System.out.println(response.statusCode()+" "+response.statusLine());
         System.out.println(response.getTime());
+
+        Assert.assertEquals(response.statusCode(),200);
     }
 
     @Test(priority = 5)
@@ -100,6 +109,8 @@ public class ReqresCrud {
         System.out.println(response.body().asPrettyString());
         System.out.println(response.statusCode()+" "+response.statusLine());
         System.out.println(response.getTime());
+
+        Assert.assertEquals(response.statusCode(),200);
     }
 
     @Test(priority = 6)
@@ -117,5 +128,7 @@ public class ReqresCrud {
         System.out.println(response.body().asPrettyString());
         System.out.println(response.statusCode()+" "+response.statusLine());
         System.out.println(response.getTime());
+
+        Assert.assertEquals(response.statusCode(),200);
     }
 }
